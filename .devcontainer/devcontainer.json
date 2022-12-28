@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.187.0/containers/javascript-node
 {
-"name": "SAP cloud-cap-hana-swapi Contributor Devcontainer", 	
+"name": "VSCode Devcontainer for SAP CAP", 	
 "build": 
 {
 	"dockerfile": "Dockerfile", 
@@ -38,7 +38,7 @@
 	], 	
 
 // Use 'forwardPorts' to make a list of ports inside the container available locally. 
-	"forwardPorts": [ 4004, 3010 ], 
+	"forwardPorts": [ 4004 ], 
 
 	// Use 'postCreateCommand' to run commands after the container is created. 
 	// "postCreateCommand": "yarn install", 
