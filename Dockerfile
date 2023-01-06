@@ -26,6 +26,7 @@ fi \
 # Install tslint, typescript. eslint is installed by javascript image
 && sudo -u ${USERNAME} npm install -g typescript \
 && sudo -u ${USERNAME} npm install -g node-ts \
+&& sudo -u ${USERNAME} npm install -g tslint \
 && sudo -u ${USERNAME} npm install -g @sap/cds-dk \
 && sudo -u ${USERNAME} npm install -g @ui5/cli \
 && sudo -u ${USERNAME} npm install -g yo \
