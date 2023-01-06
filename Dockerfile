@@ -34,7 +34,7 @@ fi \
 && sudo -u ${USERNAME} npm install -g @sap/generator-fiori \
 && sudo -u ${USERNAME} npm install -g @sap/generator-hdb-project \
 && sudo -u ${USERNAME} npm install -g mbt \
-&& sudo -u ${USERNAME} npm install -g hana-cli \
+&& sudo -u ${USERNAME} npm install -g hana-cli
 
 
 # *********************************************************************
@@ -50,10 +50,8 @@ echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \ 
 && apt-get -y install sqlite3 cf-cli \ 
-
 # Install extra tools for CAP development & deployment.
 # && apt-get -y install --no-install-recommends sqlite cf-cli
-
 # Clean up 
 && apt-get autoremove -y \ 
 && apt-get clean -y \ 
