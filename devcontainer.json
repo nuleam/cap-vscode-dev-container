@@ -4,9 +4,9 @@
 "name": "VSCode Devcontainer for SAP CAP", 	
 "build": 
 {
-	"dockerfile": "Dockerfile", 
+	"dockerfile": "Dockerfile"/* , 
 // Update 'VARIANT' to pick a Node version: 12, 14, 16
-"args": { "VARIANT": "16" } 	
+"args": { "VARIANT": "latest" } 	 */
 }, 	
 
 // Set *default* container specific settings.json values on container create. 	
