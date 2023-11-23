@@ -2,8 +2,8 @@
 # See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.187.0/containers/javascript-node/.devcontainer/base.Dockerfile
 
 # [Choice] Node.js version: 16, 14, 12
-ARG VARIANT="16-buster"
-FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
+ARG VARIANT="18"
+FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:${VARIANT}
 
 # The javascript-node image includes a non-root node user with sudo access. Use
 # the "remoteUser" property in devcontainer.json to use it. On Linux, the container
@@ -51,7 +51,8 @@ echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \ 
-&& apt-get -y install sqlite3 cf-cli \ 
+#&& apt-get -y install sqlite3 cf-cli \ 
+&& apt-get install cf8-cli \
 # Install extra tools for CAP development & deployment.
 # && apt-get -y install --no-install-recommends sqlite cf-cli
 # Clean up 
